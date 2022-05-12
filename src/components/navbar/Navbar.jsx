@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
+import { Link } from 'react-router-dom';
 import './navbar.css';
 
 const Navbar = () => {
@@ -20,7 +21,7 @@ const Navbar = () => {
         </div>
       </div>
       <div className="gpt3__navbar-sign">
-        <button type="button">Currency exchange calculator</button>
+        <Link to="/exchange"> <button type="button">Currency exchange calculator</button></Link>
       </div>
       {/* BELOW IS THE NAVBAR FOR THE RESPONSIVE VIEW OF MOBILE / TABLET */}
 
@@ -38,7 +39,7 @@ const Navbar = () => {
             <p><a href="#blog">Blogs</a></p>
           </div>
           <div className="gpt3__navbar-menu_container-links-sign">
-            <button type="button">Currency exchange calculator</button>
+            <Link to="/exchange"> <button type="button">Currency exchange calculator</button></Link>
           </div>
         </div>
         )}
