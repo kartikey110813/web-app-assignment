@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import axios from 'axios';
 import Feature from './components/feature/Feature';
 import './containers/WhatBlockchain/whatBlockchain.css';
@@ -28,6 +29,9 @@ const ExchangeCalc = () => {
           title="Currency Exchange Calculator"
           text="Choose your currency from below List and I will convert its price in Bitcoin"
         />
+        <div>
+          <Link to="/"><button type="button" style={{ color: 'white', padding: '20%', background: 'orangered', border: 'none', borderRadius: '5px' }}>HOME</button></Link>
+        </div>
       </div>
       <div className="gpt3__whatgpt3-heading">
         <div className="gpt3__header-content__input">
